@@ -9,7 +9,8 @@ import {
 
 const SignIn = () => {
   const [formData, setFormData] = useState({});
-  const { error, loading } = useSelector((state) => state.user);
+  const loading = useSelector((state) => state.user);
+  const error = useSelector((state) => state.user);
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
